@@ -1,0 +1,7 @@
+{
+  "id": "minecraft-java",
+  "name": "Minecraft Java Edition",
+  "description": "Minecraft is a sandbox video game developed by Mojang Studios. The game was created by Markus 'Notch' Persson in the Java programming language.",
+  "image": "/games/img/minecraft.png",
+  "downloadLink": "https://example.com/download/minecraft"
+}
