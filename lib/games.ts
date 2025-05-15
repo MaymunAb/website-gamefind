@@ -13,8 +13,6 @@ export interface Game {
 // In a real Next.js app, you would use the fs module or API routes to read the files
 const gameFiles = {
   "gta4.json": () => import("../app/links/gta4.json").then((m) => m.default),
-  "minecraft.json": () => import("../app/links/minecraft.json").then((m) => m.default),
-  "fortnite.json": () => import("../app/links/fortnite.json").then((m) => m.default),
 }
 
 export async function getAllGames(): Promise<Game[]> {

@@ -1,7 +1,0 @@
-{
-  "id": "sample-game",
-  "name": "Sample Game",
-  "description": "This is a sample game description. In a real implementation, you would have multiple JSON files in this directory, each containing information about a different game.",
-  "image": "/games/sample-game.jpg",
-  "downloadLink": "https://example.com/download/sample-game"
-}
