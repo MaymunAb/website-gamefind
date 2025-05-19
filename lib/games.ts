@@ -14,7 +14,10 @@ export interface Game {
 const gameFiles = {
   "gta4.json": () => import("../app/links/gta4.json").then((m) => m.default),
   "partypanic.json": () => import("../app/links/partypanic.json").then((m) => m.default),
-  "rdr1.json": () => import("../app/links/rdr1.json").then((m) => m.default),
+  "stickfight.json": () => import("../app/links/stickfight.json").then((m) => m.default),
+  "subnautica.json": () => import("../app/links/subnautica.json").then((m) => m.default),
+  "pacify.json": () => import("../app/links/pacify.json").then((m) => m.default),
+  "carmechanic.json": () => import("../app/links/carmechanic.json").then((m) => m.default),
   "rdr2.json": () => import("../app/links/rdr2.json").then((m) => m.default),
   "spntiresmud.json": () => import("../app/links/spntiresmud.json").then((m) => m.default),
   "ultimatechickenhorse.json": () => import("../app/links/ultimatechickenhorse.json").then((m) => m.default),

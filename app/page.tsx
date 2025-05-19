@@ -11,7 +11,7 @@ export default async function Home() {
           Azure GameFind
         </h1>
         <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-          Your destination for free game downloads. Browse our collection and find your next gaming adventure.
+          Free PC Games for free!
         </p>
       </div>
 
