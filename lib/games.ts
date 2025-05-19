@@ -34,6 +34,14 @@ const gameFiles = {
   "payday2.json": () => import("../app/links/payday2.json").then((m) => m.default),
   "peopleplayground.json": () => import("../app/links/peopleplayground.json").then((m) => m.default),
   "TheLongDrive.json": () => import("../app/links/TheLongDrive.json").then((m) => m.default),
+  "ravenfield.json": () => import("../app/links/ravenfield.json").then((m) => m.default),
+  "thewitcher1.json": () => import("../app/links/thewitcher1.json").then((m) => m.default),
+  "thewitcher2.json": () => import("../app/links/thewitcher2.json").then((m) => m.default),
+  "thewitcher3.json": () => import("../app/links/thewitcher3.json").then((m) => m.default),
+  "sekiroshadows.json": () => import("../app/links/sekiroshadows.json").then((m) => m.default),
+  "undertale.json": () => import("../app/links/undertale.json").then((m) => m.default),
+  "whiteknuckle.json": () => import("../app/links/whiteknuckle.json").then((m) => m.default),
+  "repo.json": () => import("../app/links/repo.json").then((m) => m.default),
   "ultimatechickenhorse.json": () => import("../app/links/ultimatechickenhorse.json").then((m) => m.default),
 }
 
