@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Azure GameFind - Bedava PC Oyunları",
   description: "İstediğin oyunları indir!",
-    generator: 'azure-team'
+  generator: "azure-team",
 }
 
 export default function RootLayout({
@@ -19,7 +19,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children} <Analytics /> </body>
+      <head>
+        <meta name="google-adsense-account" content="ca-pub-7042796764932154" />
+      </head>
+      <body className={inter.className}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   )
 }
