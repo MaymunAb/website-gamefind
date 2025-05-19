@@ -43,6 +43,8 @@ const gameFiles = {
   "whiteknuckle.json": () => import("../app/links/whiteknuckle.json").then((m) => m.default),
   "repo.json": () => import("../app/links/repo.json").then((m) => m.default),
   "drift86.json": () => import("../app/links/drift86.json").then((m) => m.default),
+  "warband.json": () => import("../app/links/warband.json").then((m) => m.default),
+  "bannerlord.json": () => import("../app/links/bannerlord.json").then((m) => m.default),
   "ultimatechickenhorse.json": () => import("../app/links/ultimatechickenhorse.json").then((m) => m.default),
 }
 
