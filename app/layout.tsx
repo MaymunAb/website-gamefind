@@ -7,9 +7,9 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Azure GameFind - Free Game Links",
-  description: "Browse and download free games",
-    generator: 'v0.dev'
+  title: "Azure GameFind - Bedava PC Oyunları",
+  description: "İstediğin oyunları indir!",
+    generator: 'azure-team'
 }
 
 export default function RootLayout({
@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>{children} <Analytics /> </body>
     </html>
   )
 }
