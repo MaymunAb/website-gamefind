@@ -22,14 +22,14 @@ export default function GameDetail({ game }: GameDetailProps) {
       <div className="flex-grow flex flex-col bg-black bg-opacity-70 text-white">
         <div className="container mx-auto px-4 py-8">
           <Link href="/" className="inline-flex items-center text-blue-400 hover:text-blue-300 mb-8">
-            <ArrowLeft className="mr-2" /> Back to Home
+            <ArrowLeft className="mr-2" /> Ana menüye dön
           </Link>
 
           <div className="max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">{game.name}</h1>
 
             <div className="bg-black bg-opacity-50 p-6 rounded-lg mb-12">
-              <h2 className="text-2xl font-semibold mb-4">About the Game</h2>
+              <h2 className="text-2xl font-semibold mb-4">Oyun hakkında: </h2>
               <p className="text-lg leading-relaxed">{game.description}</p>
             </div>
 
@@ -40,9 +40,9 @@ export default function GameDetail({ game }: GameDetailProps) {
                 rel="noopener noreferrer"
                 className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 inline-flex items-center"
               >
-                <Download className="mr-2" /> Download Now
+                <Download className="mr-2" /> İndir
               </a>
-              <p className="mt-4 text-sm text-gray-400">By downloading, you agree to our terms and conditions.</p>
+              <p className="mt-4 text-sm text-gray-400">Bazı oyunlar crack içerebildiğinden antivirüsleri kapalı tutunuz.</p>
             </div>
           </div>
         </div>
