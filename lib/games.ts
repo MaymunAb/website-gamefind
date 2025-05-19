@@ -18,6 +18,7 @@ const gameFiles = {
   "subnautica.json": () => import("../app/links/subnautica.json").then((m) => m.default),
   "pacify.json": () => import("../app/links/pacify.json").then((m) => m.default),
   "carmechanic.json": () => import("../app/links/carmechanic.json").then((m) => m.default),
+  "rdr1.json": () => import("../app/links/rdr2.json").then((m) => m.default),
   "rdr2.json": () => import("../app/links/rdr2.json").then((m) => m.default),
   "spntiresmud.json": () => import("../app/links/spntiresmud.json").then((m) => m.default),
   "ultimatechickenhorse.json": () => import("../app/links/ultimatechickenhorse.json").then((m) => m.default),
