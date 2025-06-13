@@ -1,21 +1,27 @@
-import { getAllGames } from "@/lib/games"
-import GameList from "@/components/game-list"
+import Image from "next/image"
 
-export default async function Home() {
-  const games = await getAllGames()
-
+export default function Home() {
   return (
-    <main className="container mx-auto px-4 py-8">
-      <div className="text-center mb-12">
-        <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text mb-4">
-          Azure GameFind
-        </h1>
-        <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-          Free PC Games for free!
-        </p>
-      </div>
+    <main className="flex flex-col items-center justify-center min-h-screen bg-gray-100 text-center px-4">
+      {/* Fake Cloudflare Logo */}
+      <Image
+        src="/cloudflare.png" // public klasörüne bir fake logo yerleştirmen gerekiyor
+        alt="Cloudflare"
+        width={200}
+        height={60}
+        className="mb-8"
+      />
 
-      <GameList initialGames={games} />
+      <h1 className="text-3xl md:text-5xl font-bold text-gray-800 mb-4">
+        500 | Sunucu Hatası!
+      </h1>
+      <p className="text-gray-600 text-lg">
+        Sunucumuz şu anda yanıt vermiyor. Lütfen daha sonra tekrar deneyin.
+      </p>
+
+      <p className="text-sm text-gray-500 mt-8">
+        Cloudflare Ray ID: #149ak39flla145
+      </p>
     </main>
   )
 }
