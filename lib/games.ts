@@ -46,6 +46,14 @@ const gameFiles = {
   "warband.json": () => import("../app/links/warband.json").then((m) => m.default),
   "bannerlord.json": () => import("../app/links/bannerlord.json").then((m) => m.default),
   "ultimatechickenhorse.json": () => import("../app/links/ultimatechickenhorse.json").then((m) => m.default),
+  "dale.json": () => import("../app/links/dale.json").then((m) => m.default),
+  "cssource.json": () => import("../app/links/cssource.json").then((m) => m.default),
+  "cs16.json": () => import("../app/links/cs16.json").then((m) => m.default),
+  "7launcher.json": () => import("../app/links/7launcher.json").then((m) => m.default),
+  "assettocorsa.json": () => import("../app/links/assettocorsa.json").then((m) => m.default),
+  "gtasa.json": () => import("../app/links/gtasa.json").then((m) => m.default),
+  "13cuma.json": () => import("../app/links/13cuma.json").then((m) => m.default),
+  "csgo.json": () => import("../app/links/csgo.json").then((m) => m.default),
 }
 
 export async function getAllGames(): Promise<Game[]> {
