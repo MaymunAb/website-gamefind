@@ -23,9 +23,9 @@ export default function Home() {
 
       {/* Sahte Teknik Bilgi */}
       <div className="bg-gray-100 border border-gray-300 rounded p-4 text-left w-full max-w-md text-sm font-mono">
-        <p><strong>Ray ID:</strong> #f4k3cl0udfl4r3</p>
-        <p><strong>IP:</strong> 127.0.0.1</p>
-        <p><strong>Location:</strong> Istanbul</p>
+        <p><strong>Ray ID:</strong> #da1gsaask1</p>
+        <p><strong>IP:</strong> hata?</p>
+        <p><strong>Location:</strong> hata?</p>
         <p><strong>Timestamp:</strong> {new Date().toISOString()}</p>
       </div>
 
