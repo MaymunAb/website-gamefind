@@ -56,12 +56,22 @@ const gameFiles = {
   "csgo.json": () => import("../app/links/csgo.json").then((m) => m.default),
 }
 
+// getAllGames fonksiyonunu güncelle ki admin oyunlarını da dahil etsin
 export async function getAllGames(): Promise<Game[]> {
   try {
-    // Load all game files
+    // JSON dosyalarından oyunları yükle
     const gamePromises = Object.values(gameFiles).map((importFn) => importFn())
-    const games = await Promise.all(gamePromises)
-    return games as Game[]
+    const jsonGames = await Promise.all(gamePromises)
+
+    // Admin oyunlarını yükle (sadece client-side'da)
+    let adminGames: Game[] = []
+    if (typeof window !== "undefined") {
+      const { getAdminGames } = await import("./admin-games")
+      adminGames = await getAdminGames()
+    }
+
+    // Tüm oyunları birleştir
+    return [...(jsonGames as Game[]), ...adminGames]
   } catch (error) {
     console.error("Error loading games:", error)
     return []

@@ -10,9 +10,12 @@ export default async function Home() {
         <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text mb-4">
           Azure GameFind
         </h1>
-        <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-          Free PC Games for free!
-        </p>
+        <p className="text-lg text-gray-700 max-w-2xl mx-auto mb-4">Free PC Games for free!</p>
+        <div className="text-center">
+          <a href="/admin" className="text-sm text-gray-500 hover:text-gray-700 underline">
+            Admin Girişi
+          </a>
+        </div>
       </div>
 
       <GameList initialGames={games} />
